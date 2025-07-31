@@ -9,6 +9,9 @@ GT: > 1200px
 */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background: linear-gradient(0deg, rgb(255, 226, 165) 0%, rgb(218, 168, 61) 100%);
+    }
     section#login {
         width: 80vw;
     }
@@ -29,14 +32,20 @@ GT: > 1200px
 }
 
 @media screen and (min-width:992px) {
+    body{
+        background: linear-gradient(0deg, rgb(255, 226, 165) 0%, rgb(218, 168, 61) 100%);
+    }
+
     section#login {
-        width: 990px;
+        width: 950px;
     }
 
     section#login > div#imagem{
         float: left;
         width: 50%;
         height: 100%;
+        background-size: 600px 600px;
+        background-position: center center;
     }
 
     section#login > div#formulario {

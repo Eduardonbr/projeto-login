@@ -20,7 +20,7 @@ html{
 }
 
 body{
-    background: linear-gradient(0deg, rgba(255, 242, 170, 0.94) 0%, rgb(218, 168, 61) 100%);
+    background-color: rgb(255, 226, 165);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -46,6 +46,9 @@ section#login{
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem{
