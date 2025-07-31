@@ -5,3 +5,72 @@
     Verde: #49a09d
     Lilás: #5f2c82
 */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    background: linear-gradient(0deg, rgba(255, 242, 170, 0.94) 0%, rgb(218, 168, 61) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    text-align: center;
+    background-color: rgb(250, 255, 182);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+section#login > div#imagem{
+    background: black url(../imagens/Clare.png) no-repeat;
+    background-size: 350px 350px;
+    background-position: center center;
+
+    height: 200px;
+
+}
+
+input#box{
+    border-color: rgb(231, 219, 111);
+    background-color: rgb(255, 249, 209);
+    width: 220px;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 100px;
+    outline: none;
+}
+
+input:focus{
+    box-shadow: 0px 0px 4px #000;
+}
+
+
+
+
+
