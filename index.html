@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-querry.css">
 </head>
@@ -16,21 +17,31 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vinda a Clare Brand. Faça login e acesse nosso catálogo.</p>
-                <form id="email" action="login.php" method="post">
-                    <input placeholder="Digite seu email" id="box" type="email">
-                </form>
+
 
                 <form action="login.php" method="post">
-                    <input placeholder="Digite sua senha" id="box" type="password">
+                    <div class="campo">
+                        <i class="material-icons">person</i>
+                        <input  type="email" name="login" id="ilogin" placeholder="Digite seu email" autocomplete="email" required maxlength="30">
+                        <label for="ilogin">Login</label>
+                    </div>
+
+                    <div class="campo">
+                        <i class="material-icons">vpn_key</i>
+                        <input  type="password" name="senha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="isenha">Senha</label>
+                    </div>
                 </form>
 
                 <form  action="login.php">
-                    <input id="buttom" type="button" value="Entrar">
+                    <input id="buttom" type="submit" value="Entrar">
                 </form>
 
-                <form id="buttom" action="login.php">
-                    <input type="button" value="Esqueci a senha">
+                <form action="">
+                    <a href="" class="botao">Esqueci a Senha</a>
                 </form>
+
+
             </div>
         </section>
     </main>
